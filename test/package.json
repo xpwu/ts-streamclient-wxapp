@@ -1,0 +1,41 @@
+{
+  "name": "ts-streamclient-wxapp",
+  "version": "0.1.0",
+  "description": "typescript stream client",
+  "author": "xpwu",
+  "dependencies": {
+    "ts-streamclient-base": "https://github.com/xpwu/ts-streamclient-base.git#v0.1.0",
+    "ts-streamclient-wxapp": "https://github.com/xpwu/ts-streamclient-wxapp.git#v0.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "28.1.3",
+    "jest": "28.1.1",
+    "ts-jest": "28.0.5",
+    "typescript": "4.7.4",
+    "miniprogram-api-typings": "3.6.0"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "stream client",
+    "web"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpwu/ts-streamclient-wxapp.git"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testRegex": "test/(.+)\\.test\\.(tsx?)$"
+  },
+  "miniprogram": "."
+}

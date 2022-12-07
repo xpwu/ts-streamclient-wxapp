@@ -1,0 +1,24 @@
+/**index.wxss**/
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.push{
+  color:cadetblue;
+}
+
+.resp {
+  color: darkgray;
+}
+
+.error {
+  color: #ff2c27;
+}
+
+.result {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+

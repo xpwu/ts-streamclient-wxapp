@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">wss</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder="wss" model:value="{{wss}}"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">headers</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  placeholder="key" model:value="{{key1}}"/>
+        <input class="weui-input"  placeholder="value" model:value="{{value1}}"/>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  placeholder="key" model:value="{{key2}}"/>
+        <input class="weui-input"  placeholder="value" model:value="{{value2}}"/>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  placeholder="key" model:value="{{key3}}"/>
+        <input class="weui-input"  placeholder="value" model:value="{{value3}}"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">data</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder="data" model:value="{{body}}"/>
+      </view>
+    </view>
+  </view>
+
+  <button type="primary" bindtap="send">确定</button>
+
+  <view wx:for="{{out}}" wx:key="index" class="result">
+    <view wx:if="{{item.type==1}}" class="push">{{item.data}}</view>
+    <view wx:elif="{{item.type==2}}" class="error">{{item.data}}</view>
+    <view wx:else class="resp">{{item.data}}</view>
+  </view>
+</view>
