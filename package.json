@@ -4,7 +4,7 @@
   "description": "typescript stream client",
   "author": "xpwu",
   "dependencies": {
-    "ts-streamclient-base": "https://github.com/xpwu/ts-streamclient-base.git#37f50d9eb6580151218d443e4aca27d194cfa783"
+    "ts-streamclient-base": "https://github.com/xpwu/ts-streamclient-base.git#v0.1.0"
   },
   "devDependencies": {
     "@types/jest": "28.1.3",
