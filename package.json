@@ -1,6 +1,6 @@
 {
   "name": "ts-streamclient-wxapp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "typescript stream client",
   "author": "xpwu",
   "dependencies": {
