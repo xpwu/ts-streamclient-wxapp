@@ -4,6 +4,8 @@
     "target": "ES6",
     "moduleResolution": "node",
 
+    "isolatedModules": true,
+
     "sourceMap": true,
     "noEmit": false,
 
